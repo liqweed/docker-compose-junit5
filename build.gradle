@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.0.3'
+    implementation 'com.palantir.docker.compose:docker-compose-rule-core:0.33.0'
+    implementation 'com.palantir.docker.compose:docker-compose-rule-junit4:0.33.0'
+}
+
+repositories {
+    jcenter()
+    maven { url 'https://dl.bintray.com/palantir/releases' }
+}
